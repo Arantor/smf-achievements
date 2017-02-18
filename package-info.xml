@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Arantor:Achievements</id>
+	<name>Achievements</name>
+	<version>1.0</version>
+	<type>modification</type>
+
+	<install for="2.1 Beta 3">
+		<database>install.php</database>
+		<require-file name="achievements.css" destination="$themes_dir/default/css" />
+		<require-file name="achievements.js" destination="$themes_dir/default/scripts" />
+		<require-file name="Achievements.php" destination="$sourcedir" />
+		<require-file name="Subs-Achievements.php" destination="$sourcedir" />
+		<require-file name="Profile-Achievements.php" destination="$sourcedir" />
+		<require-file name="Admin-Achievements.php" destination="$sourcedir" />
+		<require-file name="Admin-Achievements.template.php" destination="$themes_dir/default" />
+		<require-dir name="achievements-images" destination="$themes_dir/default/images" />
+		<require-dir name="achievements" destination="$themes_dir/default/languages" />
+	</install>
+
+	<uninstall for="2.1 Beta 3">
+		<code>uninstall-required.php</code>
+		<remove-file name="$themes_dir/default/css/achievements.css" />
+		<remove-file name="$themes_dir/default/scripts/achievements.js" />
+		<remove-file name="$sourcedir/Achievements.php" />
+		<remove-file name="$sourcedir/Profile-Achievements.php" />
+		<remove-file name="$sourcedir/Subs-Achievements.php" />
+		<remove-file name="$sourcedir/Admin-Achievements.php" />
+		<remove-file name="$themes_dir/default/Admin-Achievements.template.php" />
+		<remove-dir name="$themes_dir/default/images/achievements-images" />
+		<remove-dir name="$themes_dir/default/languages/achievements" />
+	</uninstall>
+</package-info>
