@@ -12,7 +12,7 @@
 			<add><![CDATA[		// Show the user's currency
 		if (!empty($message['member']['id']) && !empty($GLOBALS['user_profile'][$message['member']['id']]) && function_exists('currency_display'))
 			echo '
-								<li class="money">', $txt['profile_currency'], ': ', currency_display($GLOBALS['user_profile'][$message['member']['id']]['member_currency']), '</li>';
+								<li class="money"><span class="generic_icons currency" title="', $txt['profile_currency'], '"></span>: ', currency_display($GLOBALS['user_profile'][$message['member']['id']]['member_currency']), '</li>';
 
 		// Show their personal text?]]></add>
 		</operation>

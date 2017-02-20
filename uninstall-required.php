@@ -29,7 +29,7 @@ global $smcFunc;
 // 1. Removing all the SMF hooks.
 $hooks = array();
 $hooks[] = array(
-	'hook' => 'integrate_actions',
+	'hook' => 'integrate_user_info',
 	'function' => 'integrate_achievements',
 	'file' => '$sourcedir/Achievements.php',
 );
