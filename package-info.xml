@@ -7,6 +7,7 @@
 	<type>modification</type>
 
 	<install for="2.1 Beta 3">
+		<modification type="file">install.xml</modification>
 		<database>install.php</database>
 		<require-file name="achievements.css" destination="$themes_dir/default/css" />
 		<require-file name="achievements.js" destination="$themes_dir/default/scripts" />
@@ -21,6 +22,7 @@
 	</install>
 
 	<uninstall for="2.1 Beta 3">
+		<modification type="file" reverse="true">install.xml</modification>
 		<code>uninstall-required.php</code>
 		<remove-file name="$themes_dir/default/css/achievements.css" />
 		<remove-file name="$themes_dir/default/scripts/achievements.js" />

@@ -7,6 +7,8 @@ function integrate_achievements()
 {
 	global $settings;
 
+	loadLanguage('achievements/Achievements');
+
 	if (file_exists($settings['default_theme_dir'] . '/css/achievements.css'))
 	{
 		loadCSSFile('achievements.css', ['default_theme' => true], 'achievements');
@@ -26,6 +28,16 @@ span.generic_icons.currency { background: url(' . $settings['default_theme_url']
 		'integrate_achievements_popup',
 		false
 	);
+	add_integration_function(
+		'integrate_load_member_data',
+		'integrate_load_achievements_member_data',
+		false
+	);
+}
+
+function integrate_load_achievements_member_data(&$select_columns, &$select_tables, &$set)
+{
+	$select_columns .= ', mem.member_currency';
 }
 
 function currency_display($amount)
