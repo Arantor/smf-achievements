@@ -1,0 +1,23 @@
+span.currency {
+	display: inline-block;
+}
+
+span.currency .image {
+	display: inline-block;
+	width: 11px;
+	content: " ";
+	height: 11px;
+	margin-right:5px;
+	margin-bottom:-2px;
+
+}
+
+span.currency.gold .image {
+	background: url(../images/achievements-images/gold.png) 0 0 no-repeat;
+}
+span.currency.silver .image {
+	background: url(../images/achievements-images/silver.png) 0 0 no-repeat;
+}
+span.currency.copper .image {
+	background: url(../images/achievements-images/bronze.png) 0 0 no-repeat;
+}

@@ -29,4 +29,9 @@ function integrate_achievements_popup(&$profile_items)
 	];
 }
 
+function achievements_currency($memID)
+{
+	loadTemplate('Profile-Achievements');
+}
+
 ?>

@@ -35,6 +35,11 @@ global $modSettings, $smcFunc, $txt, $db_prefix;
 // Here we will update the $modSettings variables.
 $mod_settings = [];
 $new_settings = [
+	'currency_tier_1' => 'gold',
+	'currency_tier_1_multiplier' => 100,
+	'currency_tier_2' => 'silver',
+	'currency_tier_2_multiplier' => 100,
+	'currency_tier_3' => 'copper',
 ];
 
 foreach ($new_settings as $k => $v)
@@ -50,7 +55,7 @@ foreach ($new_settings as $k => $v)
 $hooks = [];
 // Bootstrap
 $hooks[] = [
-	'hook' => 'integrate_actions',
+	'hook' => 'integrate_user_info',
 	'function' => 'integrate_achievements',
 	'perm' => true,
 	'file' => '$sourcedir/Achievements.php',
