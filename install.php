@@ -88,8 +88,8 @@ $tables[] = [
 		db_field('id_member', 'mediumint'),
 		db_field('curr_recd', 'bigint'),
 		db_field('curr_sent', 'bigint'),
-		db_field('curr_src', 'varchar', 20),
-		db_field('curr_dest', 'varchar', 50),
+		db_field('curr_src', 'varchar', 255),
+		db_field('curr_dest', 'varchar', 255),
 		db_field('transaction_timestamp', 'int'),
 	],
 	'indexes' => [
