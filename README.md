@@ -2,6 +2,8 @@
 
 A mod for supporting achievements being gained by accounts, typically for roleplay purposes.
 
+**As of 2018 this mod is 100% deprecated. All of the features are being transferred to the [StoryBB](https://github.com/StoryBB/StoryBB) project which is a rewritten SMF with roleplay as a set of core features.**
+
 Features (not all implemented yet!):
  * Achievements that can be earned based on number of posts/topics created, likes received
  * Achievements that can be collected in tracks such that one can have tiers of achievements to work towards
